@@ -24,11 +24,14 @@ body {
 }
 .hero-image {
   width: 100%;
-  height: 100%;
 }
 .desktop-img,
 .tablet-img {
   display: none;
+}
+.mobile-img {
+  width: 100%;
+  height: auto;
 }
 img,
 .hero-image {
@@ -59,7 +62,7 @@ li {
 }
 
 li::before {
-  content: url(asset/icon-list.svg);
+  content: url(assets/images/icon-list.svg);
   position: absolute;
   left: 0;
   top: 0;
@@ -120,12 +123,11 @@ li::before {
 
 /* success state */
 .successState {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-
   transition: all 0.5s;
   min-height: 100vh;
 }
@@ -133,6 +135,12 @@ li::before {
   min-height: 100vh;
   padding: 2.5rem 1.5rem;
   background-color: whitesmoke;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.dismiss {
+  margin-bottom: 2rem;
 }
 .tick {
   width: 20%;
@@ -148,6 +156,7 @@ li::before {
   line-height: 1.3rem;
   margin-bottom: 16rem;
 }
+
 .dismiss:hover {
   background-image: linear-gradient(to right, #ff5474, #ff6646);
   border: none;
