@@ -62,7 +62,7 @@ li {
 }
 
 li::before {
-  content: url(assets/images/icon-list.svg);
+  content: url(asset/icon-list.svg);
   position: absolute;
   left: 0;
   top: 0;
