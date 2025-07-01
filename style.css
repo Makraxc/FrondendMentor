@@ -20,7 +20,6 @@ body {
 }
 .active-state {
   position: relative;
-  min-height: 100vh;
 }
 .hero-image {
   width: 100%;
